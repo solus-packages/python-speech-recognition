@@ -1,6 +1,6 @@
 name       : python-speech-recognition
 version    : 3.8.1
-release    : 4
+release    : 5
 source     :
     - https://github.com/Uberi/speech_recognition/archive/3.8.1.tar.gz : 82d3313db383409ddaf3e42625fb0c3518231a1feb5e2ed5473b10b3d5ece7bd
 license    : GPL-2.0-only
@@ -15,6 +15,6 @@ build      : |
 install    : |
     %python3_install
     # Remove binary files we don't need or want on Solus
-    rm $installdir/usr/lib/python3.7/site-packages/speech_recognition/flac-linux-x86
-    rm $installdir/usr/lib/python3.7/site-packages/speech_recognition/flac-mac
-    rm $installdir/usr/lib/python3.7/site-packages/speech_recognition/flac-win32.exe
+    rm $installdir/usr/lib/python3.9/site-packages/speech_recognition/flac-linux-x86
+    rm $installdir/usr/lib/python3.9/site-packages/speech_recognition/flac-mac
+    #rm $installdir/usr/lib/python3.9/site-packages/speech_recognition/flac-win32.exe
